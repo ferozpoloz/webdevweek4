@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 1.25rem; /* 20px */
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        #demo {
+            background-color: #f9f9f9;
+            padding: 16px;
+            border-radius: 6px;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loop Output:</h1>
+        <!-- This is the paragraph where the output will be displayed -->
+        <p id="demo"></p>
+    </div>
+
+    <script>
+      // This is the complete script
+      let text = "";
+      
+      // The loop starts at i = 0.
+      // It continues as long as i is less than 5 (i.e., 0, 1, 2, 3, 4).
+      // It increments i by 1 after each loop.
+      for (let i = 0; i < 5; i++) {
+        // We add (i + 1) to get numbers 1 through 5.
+        // We add "<br>" to create a new line in HTML.
+        text += "The number is " + (i + 1) + "<br>";
+      }
+      
+      // Set the innerHTML of the paragraph to the text we built
+      document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>
